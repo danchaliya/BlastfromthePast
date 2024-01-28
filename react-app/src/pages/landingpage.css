@@ -5,14 +5,29 @@
 
 #custom-h1{
     font-family: Myriad Pro Regular;
-    font-size: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 90px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 #custom-h2{
     font-family: Myriad Pro Regular;
-    font-size: 30px;
+    font-size: 40px;
+    
+}
+
+#custom-3{
+    font-family: Myriad Pro Regular;
+    font-size: 20px;
+    
+}
+
+#main{
+    margin-left: 30px;
+}
+
+#signup-button{
+    margin-left: 30px;
 }
 
 #loginButton{
@@ -38,6 +53,13 @@
     margin: 5px 0; /* Adjust the margin between the lines */
 }
 
+.line2{
+    width: 455px; /* Adjust the width of the lines */
+    height: 2px; /* Adjust the height of the lines */
+    background-color: #39312B; /* Adjust the color of the lines */
+    margin: 5px 0; /* Adjust the margin between the lines */
+}
+
 #header{
     margin: 30px;
 }
@@ -46,4 +68,19 @@
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     margin: 20px;
+}
+
+#lines-2{
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin: 20px;
+    margin-top: 100px;
+    
+}
+
+#subpage-title{
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin: 20px;
+    margin-top: 100px;
 }

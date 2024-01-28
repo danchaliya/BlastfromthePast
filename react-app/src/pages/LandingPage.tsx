@@ -13,7 +13,7 @@ function LandingPage() {
                         <img src={icon} id="logo"></img>
                         </div>
                     <div style={{marginLeft:'auto'}}>
-                        <Link to="/sign-in">
+                        <Link to="/log-in">
                             <button id="loginButton">Login</button>
                         </Link>
                     </div>
@@ -25,14 +25,14 @@ function LandingPage() {
             </div>
             <div style={{marginLeft: '155px', marginTop: '150px'}}>
                 <div id="main">
-                    <h2 id="custom-h2">
+                    <h2 id="custom-h3">
                         welcome to...
                     </h2>
                     <h1 id="custom-h1">
                         Blast From The Past!
                     </h1>
                 </div>
-                <div>
+                <div id="signup-button">
                     <div style={{marginLeft:'auto'}}>
                         <Link to="/sign-up">
                             <button id="loginButton">Sign Up</button>
