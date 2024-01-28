@@ -10,12 +10,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=EB+Garamond&family=Titillium+Web&display=swap" rel="stylesheet">
 
-        <button id = 'button_predict'>Predict</button>
-
         
     </head>
 
     <body>
+        <form action="/create/" method="post">
+            <button id = 'button_predict' name="forwardBtn" type="submit">Predict</button>
+        </form>
+
 
         <h1 id="heading_text">Blast From The Past</h1>
 
@@ -31,7 +33,7 @@
 
         <div id="line4"></div>
 
-        <p id="text1">Enter a year between 1900 and 2020 to see what was happening in the world!</p>
+        <p id="text1">2023</p>
         
     </body>
 </html>
