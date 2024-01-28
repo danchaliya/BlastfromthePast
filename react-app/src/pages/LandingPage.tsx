@@ -1,4 +1,4 @@
-//import Header from '../components/Header';
+ //import Header from '../components/Header';
 //import Button from '../components/Button';
 import Line from '../components/Line';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ function LandingPage() {
     return (
         <div>
             <div>
-                <div style={{display:'flex'}}>
+                <div id = "header" style={{display:'flex'}}>
                     <div>
                         <img src={icon} id="logo"></img>
                         </div>
@@ -23,7 +23,23 @@ function LandingPage() {
                 <Line />
                 <Line />
             </div>
-
+            <div style={{marginLeft: '155px', marginTop: '150px'}}>
+                <div id="main">
+                    <h2 id="custom-h2">
+                        welcome to...
+                    </h2>
+                    <h1 id="custom-h1">
+                        Blast From The Past!
+                    </h1>
+                </div>
+                <div>
+                    <div style={{marginLeft:'auto'}}>
+                        <Link to="/sign-up">
+                            <button id="loginButton">Sign Up</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
         
       );

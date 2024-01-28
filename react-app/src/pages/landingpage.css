@@ -3,20 +3,32 @@
     src: url('../assets/DMSerifDisplay-Regular.ttf'),format('ttf');
   }
 
+#custom-h1{
+    font-family: Myriad Pro Regular;
+    font-size: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#custom-h2{
+    font-family: Myriad Pro Regular;
+    font-size: 30px;
+}
+
 #loginButton{
     background-Color:white;
     border-color: #39312B;
     border-radius: 10px;
     font-family: Myriad Pro Regular;
     font-size: 15px;
-    margin-right: 100px;
+    margin-right: 150px;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #logo{
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .line{
@@ -26,8 +38,12 @@
     margin: 5px 0; /* Adjust the margin between the lines */
 }
 
+#header{
+    margin: 30px;
+}
+
 #lines{
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    margin: 10px;
+    margin: 20px;
 }
