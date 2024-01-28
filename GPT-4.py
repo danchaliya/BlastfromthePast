@@ -1,30 +1,79 @@
-import os
-import wandb
-from openai import OpenAI
+# import os
+# from openai import OpenAI
 
-os.environ['OPENAI_API_KEY'] = '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'
+# os.environ['OPENAI_API_KEY'] = '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'
 
-client = OpenAI()
-
+# client = OpenAI()
 
 
-response = client.chat.completions.create(
-  model="gpt-4-vision-preview",
-  messages=[
+
+# response = client.chat.completions.create(
+#   model="gpt-4-vision-preview",
+#   messages=[
+#     {
+#       "role": "user",
+#       "content": [
+#         {"type": "text", "text": "What’s in this image?"},
+#         {
+#           "type": "image_url",
+#           "image_url": {
+#             "url": "https://mtnemo.s3.amazonaws.com/notebook/231001_195_Full_Assembly/IMG_1206.jpeg",
+#           },
+#         },
+#       ],
+#     }
+#   ],
+#   max_tokens=300,
+# )
+
+# print(response.choices[0])
+
+
+
+import base64
+import requests
+
+# OpenAI API Key
+api_key = "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"
+
+# Function to encode the image
+def encode_image(image_path):
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
+
+# Path to your image
+image_path = "/Users/puravgupta/Downloads/IMG_1206.jpeg"
+
+# Getting the base64 string
+base64_image = encode_image(image_path)
+
+headers = {
+  "Content-Type": "application/json",
+  "Authorization": f"Bearer {api_key}"
+}
+
+payload = {
+  "model": "gpt-4-vision-preview",
+  "messages": [
     {
       "role": "user",
       "content": [
-        {"type": "text", "text": "What’s in this image?"},
+        {
+          "type": "text",
+          "text": "What’s in this image?"
+        },
         {
           "type": "image_url",
           "image_url": {
-            "url": "https://www.shutterstock.com/image-photo/mature-man-reading-newspaper-smiling-260nw-1939496371.jpg",
-          },
-        },
-      ],
+            "url": f"data:image/jpeg;base64,{base64_image}"
+          }
+        }
+      ]
     }
   ],
-  max_tokens=300,
-)
+  "max_tokens": 300
+}
 
-print(response.choices[0])
+response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+
+print(response.json())
