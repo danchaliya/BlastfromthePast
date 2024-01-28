@@ -1,5 +1,5 @@
 //import Header from '../components/Header';
-import Button from '../components/Button';
+//import Button from '../components/Button';
 import Line from '../components/Line';
 import { Link } from 'react-router-dom';
 import icon from '../assets/icon.png';
@@ -19,7 +19,7 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div style={{display:'flex', flexDirection: 'column'}} id= "lines">
                 <Line />
                 <Line />
             </div>
