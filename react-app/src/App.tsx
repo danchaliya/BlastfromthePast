@@ -1,5 +1,5 @@
 import LandingPage from './pages/LandingPage';
-import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 import LogIn from './pages/LogIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -13,7 +13,7 @@ function App(){
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <LandingPage />} />
-        <Route path="/sign-up" element={ <SignIn />} />
+        <Route path="/sign-up" element={ <SignUp />} />
         <Route path="/log-in" element={ <LogIn />} />
       </Routes>
     </BrowserRouter>
