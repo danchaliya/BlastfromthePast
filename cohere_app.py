@@ -22,7 +22,7 @@ co = cohere.Client('rJqbs2D0ift66GeTlL6a3DU4qpUENB5U9NN2zaD6')
 
 # print(response.text)
 
-for event in co.chat("What are the biggest world events of the year 2020?", stream=True, connectors=[{"id": "web-search"}], prompt_truncation="AUTO"):
+for event in co.chat("What are the biggest world events of the year 2023?", stream=True, connectors=[{"id": "web-search"}], prompt_truncation="AUTO"):
     if event.event_type == StreamEvent.TEXT_GENERATION:
       print(event.text, end="")
     # elif event.event_type == StreamEvent.CITATION_GENERATION:
