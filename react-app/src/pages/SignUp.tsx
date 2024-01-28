@@ -30,10 +30,10 @@ function SignUp(){
                 </div>
                 <div>
                     <Link to="/">
-                        <button id="loginButton">Sign Up</button>
+                        <button id="Button">Sign Up</button>
                     </Link>
                 </div>
-                </div>
+            </div>
         </div>
     )
 }

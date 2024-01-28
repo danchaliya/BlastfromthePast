@@ -42,6 +42,17 @@
     padding-right: 20px;
 }
 
+#Button{
+    background-Color:white;
+    border-color: #39312B;
+    border-radius: 10px;
+    font-family: Myriad Pro Regular;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #logo{
     margin-left: 150px;
 }
@@ -94,7 +105,7 @@
 }
 
 #textbox2{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .custom-input {
