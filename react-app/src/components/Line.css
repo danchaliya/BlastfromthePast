@@ -1,0 +1,7 @@
+
+.line{
+    width: 50px; /* Adjust the width of the lines */
+    height: 2px; /* Adjust the height of the lines */
+    background-color: black; /* Adjust the color of the lines */
+    margin: 5px 0; /* Adjust the margin between the lines */
+}
