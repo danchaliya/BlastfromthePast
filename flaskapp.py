@@ -3,11 +3,17 @@
 from flask import Flask, render_template
 from flask_cors import CORS, cross_origin
 import GPT
+import cohere_app
 import datetime
 
 # content = GPT.gpt4("/Users/puravgupta/Downloads/IMG_1206.jpeg")
+# personal_album = cohere_app.cohere_summarize(content)
+# major_events = cohere_app.cohere_web()
+
 content = "Gpt-4 content. This is the content for gpt-4"
-print(datetime.datetime.now())
+personal_album = "Cohere summarize content. This is the content for cohere summarize"
+major_events = "Cohere web content. This is the content for cohere web"
+
 
 app = Flask(__name__)
 
@@ -25,8 +31,8 @@ def home():
 def gpt4():
     # content = GPT.gpt4("/Users/puravgupta/Downloads/IMG_1206.jpeg")
     print("it is working now")
-    data="gpt-4 content. this is the content for gpt-4"
-    return render_template('index.html', data=data);
+    data=content
+    return render_template('index.html', data=data, personal_album=personal_album, major_events=major_events);
 
 
 

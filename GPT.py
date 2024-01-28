@@ -28,7 +28,7 @@ def gpt4(image_path):
                 "content": [
                     {
                         "type": "text",
-                        "text": "What’s in this image?"
+                        "text": "What's in this image? In a story format, paragraph in length with nostalgic and feel-good emotions."
                     },
                     {
                         "type": "image_url",

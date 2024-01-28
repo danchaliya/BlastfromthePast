@@ -15,7 +15,7 @@
 
     <body>
         <form action="/create/" method="post">
-            <button id = 'button_predict' type="submit" onclick="changeButtonText('{{ data }}')">Predict</button>
+            <button id = 'button_predict' type="submit" onclick="changeParaText('{{ data }}','{{personal_album}}','{{major_events}}')">Predict</button>
         </form>
 
 
@@ -36,12 +36,14 @@
         <p id="text1">2023</p>
 
         <p id="gpt4_output">Temp output from gpt4</p>
+        <p id="cohere_personal">Cohere personal temp text</p>
+        <p id="cohere_world">Cohere world temp text</p>
 
         <script>
-            function changeButtonText(data) {
-                var button = document.getElementById("button_predict");
-                button.innerHTML = data;
-                button.disabled = true;  // Disable the button after it's pressed
+            function changeParaText(data) {
+                var para = document.getElementById("gpt4_output");
+                para.innerHTML = data;
+                // button.disabled = true;  // Disable the button after it's pressed
             }
         </script>
         
