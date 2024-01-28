@@ -3,11 +3,6 @@
     src: url('../assets/DMSerifDisplay-Regular.ttf'),format('ttf');
   }
 
-.custom_h1{
-    font-family: Myriad Pro Regular;
-    font-size: 15px;
-}
-
 #loginButton{
     background-Color:white;
     border-color: #39312B;
@@ -31,12 +26,8 @@
     margin: 5px 0; /* Adjust the margin between the lines */
 }
 
-#header{
-    margin: 30px;
-}
-
 #lines{
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    margin: 20px;
+    margin: 10px;
 }
