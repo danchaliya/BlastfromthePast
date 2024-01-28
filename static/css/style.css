@@ -9,7 +9,7 @@ font-family: 'Titillium Web', sans-serif;
 
 body {
     box-sizing: border-box;
-    background-image: url(paper_1.png);
+    background-image: url(images/paper_1.png);
     background-size: 115%;
     background-position: bottom;; 
     background-attachment: fixed;
@@ -31,11 +31,65 @@ body {
 }
 
 #heading_text{
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     color: rgb(0, 0, 0);
     /* background-image: linear-gradient(45deg, rgb(16,55,131), rgb(47, 97, 206), rgb(16,55,131)); */
     border-radius: 15px;
     font-family: 'DM Serif Display';
     font-weight: 850;
+    font-size: 75px;
+    margin-top: 50px;
+}
+
+#logo{
+    width:200px;
+    height:200px;
+    margin-left: 5px;
+    margin-top: -150px;
+}
+
+#line1{
+    width:1000px;
+    height:3px;
+    background:rgb(0, 0, 0);
+    margin-left: 220px;
+    margin-top: -160px;
+}
+
+#line2{
+    width:1000px;
+    height:3px;
+    background:rgb(0, 0, 0);
+    margin-left: 220px;
+    margin-top: 5px;
+}
+
+
+#line3{
+    width:1000px;
+    height:3px;
+    background:rgb(0, 0, 0);
+    margin-left: 220px;
+    margin-top: 100px;
+}
+
+#line4{
+    width:1000px;
+    height:3px;
+    background:rgb(0, 0, 0);
+    margin-left: 220px;
+    margin-top: 5px;
+}
+
+#text1{
+    /* padding: 20px; */
+    text-align: right;
+    color: rgb(0, 0, 0);
+    /* background-image: linear-gradient(45deg, rgb(16,55,131), rgb(47, 97, 206), rgb(16,55,131)); */
+    /* border-radius: 15px; */
+    font-family: 'DM Serif Display';
+    font-weight: 850;
+    font-size: 20px;
+    /* margin-top: 50px; */
 }
