@@ -13,7 +13,7 @@ function LandingPage() {
                         <img src={icon} id="logo"></img>
                         </div>
                     <div style={{marginLeft:'auto'}}>
-                        <Link to="/sign-in">
+                        <Link to="/log-in">
                             <button id="loginButton">Login</button>
                         </Link>
                     </div>
@@ -32,7 +32,7 @@ function LandingPage() {
                         Blast From The Past!
                     </h1>
                 </div>
-                <div>
+                <div id="signup-button">
                     <div style={{marginLeft:'auto'}}>
                         <Link to="/sign-up">
                             <button id="loginButton">Sign Up</button>
