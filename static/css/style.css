@@ -1,0 +1,41 @@
+/*
+font-family: 'Cairo', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(paper_1.png);
+    background-size: 115%;
+    background-position: bottom;; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+#button_predict{
+    position: absolute;
+    top: 590px;
+    left: 603px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #F2AAAA;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+#heading_text{
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* background-image: linear-gradient(45deg, rgb(16,55,131), rgb(47, 97, 206), rgb(16,55,131)); */
+    border-radius: 15px;
+    font-family: 'DM Serif Display';
+    font-weight: 850;
+}
