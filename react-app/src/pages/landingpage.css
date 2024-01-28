@@ -18,18 +18,24 @@ src: url('../assets/Newsreader_24pt-Regular.ttf'),format('ttf');
 #custom-h2{
     font-family: Myriad Pro Regular;
     font-size: 40px;
+    color: #39312B;
+    text-decoration:none;
     
 }
 
 #custom-h3{
     font-family: Myriad Pro Regular;
     font-size: 20px;
+    color: #39312B;
+    text-decoration:none;
     
 }
 
 #custom-h4{
     font-family: Myriad Pro Regular;
     font-size: 25px;
+    color: #39312B;
+    text-decoration:none;
     
 }
 

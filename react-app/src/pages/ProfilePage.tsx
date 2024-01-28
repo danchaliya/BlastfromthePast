@@ -5,7 +5,7 @@ import './landingpage.css';
 import ExitButton from '../assets/ExitButton.png';
 import { Link } from 'react-router-dom';
 
-function CreateProfile(){
+function Profilepage(){
     return(
         <div>
             <div style={{display:'flex'}}>
@@ -17,19 +17,21 @@ function CreateProfile(){
             </div>
             <div style={{display:'flex', flexDirection: 'column'}} id="box" >
                 <div>
-                    <h2 id="custom-h2">Create Your Profile</h2>
+                    <h2 id="custom-h2">Your Profile</h2>
                 </div>
                 <div style={{display:'flex', flexDirection: 'column'}} id= "lines-2">
                     <Line2/>
                     <Line2/>
                 </div>
                 <div>
-                    <TextBox customLabel="Enter Username:" />
-                    <TextBox2 customLabel="Enter Password:" />
-                    <TextBox2 customLabel="Re-enter Password:" />
+                    <TextBox customLabel="Enter Name:" />
+                    <TextBox customLabel="Enter Email:" />
+                    <TextBox customLabel="Enter Phone Number:" />
+                    <TextBox customLabel="Enter Yearh of Birth YYYY/MM/DD:" />
+                    
                 </div>
                 <div>
-                    <Link to="/create-profile">
+                    <Link to="/profile-page">
                         <button id="Button">Edit</button>
                     </Link>
                 </div>
@@ -38,4 +40,4 @@ function CreateProfile(){
     )
 }
 
-export default CreateProfile;
+export default Profilepage;

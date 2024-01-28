@@ -14,12 +14,14 @@ function HomePage() {
                         <img src={icon} id="icon"></img>
                     </div>
                     <div>
+                        <Link to="/home-page" className="link-style">
                         <h3 id="custom-h4">
                             Home
                         </h3>
+                        </Link>
                     </div>
                     <div >
-                        <Link to="/log-in">
+                        <Link to="/profile-page">
                             <img src={profile} id="profileicon"></img>
                         </Link>
                     </div>
