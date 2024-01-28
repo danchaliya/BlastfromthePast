@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../assets/DMSerifDisplay-Regular.ttf'),format('ttf');
+  }
+
+#loginButton{
+    background-Color:white;
+    border-color:green;
+    border-radius: 10px;
+    font-family: Myriad Pro Regular;
+    margin-right: 100px;
+}
+
+#logo{
+    margin-left: 100px;
+}
