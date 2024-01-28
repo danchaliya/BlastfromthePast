@@ -5,19 +5,19 @@ import './landingpage.css';
 import ExitButton from '../assets/ExitButton.png';
 import { Link } from 'react-router-dom';
 
-function SignUp(){
+function CreateProfile(){
     return(
         <div>
             <div style={{display:'flex'}}>
                 <div style={{marginLeft:'auto',  marginRight: '50px', marginTop: '30px'}}>
-                    <Link to="/">
+                    <Link to="/home-page">
                         <img src={ExitButton}></img>
                     </Link>
                 </div>
             </div>
             <div style={{display:'flex', flexDirection: 'column'}} id="box" >
                 <div>
-                    <h2 id="custom-h2">Sign Up Your Account</h2>
+                    <h2 id="custom-h2">Create Your Profile</h2>
                 </div>
                 <div style={{display:'flex', flexDirection: 'column'}} id= "lines-2">
                     <Line2/>
@@ -29,8 +29,8 @@ function SignUp(){
                     <TextBox2 customLabel="Re-enter Password:" />
                 </div>
                 <div>
-                    <Link to="/create-profile">
-                        <button id="Button">Sign Up</button>
+                    <Link to="/">
+                        <button id="Button">Edit</button>
                     </Link>
                 </div>
             </div>
@@ -38,4 +38,4 @@ function SignUp(){
     )
 }
 
-export default SignUp;
+export default CreateProfile;

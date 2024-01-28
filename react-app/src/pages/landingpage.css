@@ -16,9 +16,15 @@
     
 }
 
-#custom-3{
+#custom-h3{
     font-family: Myriad Pro Regular;
     font-size: 20px;
+    
+}
+
+#custom-h4{
+    font-family: Myriad Pro Regular;
+    font-size: 15px;
     
 }
 
@@ -114,4 +120,8 @@
     border: 3px solid #39312B; /* Add an outline */
     padding: 8px; /* Add padding for better aesthetics */
     border-radius: 4px; /* Optional: Add rounded corners */
-  }
+}
+
+#profileicon{
+    margin-right: 150px;
+}
