@@ -1,4 +1,4 @@
-import './Line.css';
+import '../pages/landingpage.css';
 
 const Line = () => {
   return (
