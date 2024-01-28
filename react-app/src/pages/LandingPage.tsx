@@ -25,10 +25,10 @@ function LandingPage() {
             </div>
             <div style={{marginLeft: '155px', marginTop: '150px'}}>
                 <div id="main">
-                    <h2 id="custom-h2">
+                    <h2 className="custom-h2">
                         welcome to...
                     </h2>
-                    <h1 id="custom-h1">
+                    <h1 className="custom-h1">
                         Blast From The Past!
                     </h1>
                 </div>
