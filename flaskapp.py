@@ -5,7 +5,8 @@ from flask_cors import CORS, cross_origin
 import GPT
 import datetime
 
-
+# content = GPT.gpt4("/Users/puravgupta/Downloads/IMG_1206.jpeg")
+content = "Gpt-4 content. This is the content for gpt-4"
 print(datetime.datetime.now())
 
 app = Flask(__name__)
@@ -24,7 +25,8 @@ def home():
 def gpt4():
     # content = GPT.gpt4("/Users/puravgupta/Downloads/IMG_1206.jpeg")
     print("it is working now")
-    return render_template('index.html');
+    data="gpt-4 content. this is the content for gpt-4"
+    return render_template('index.html', data=data);
 
 
 

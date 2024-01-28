@@ -15,7 +15,7 @@
 
     <body>
         <form action="/create/" method="post">
-            <button id = 'button_predict' name="forwardBtn" type="submit">Predict</button>
+            <button id = 'button_predict' type="submit" onclick="changeButtonText('{{ data }}')">Predict</button>
         </form>
 
 
@@ -34,6 +34,16 @@
         <div id="line4"></div>
 
         <p id="text1">2023</p>
+
+        <p id="gpt4_output">Temp output from gpt4</p>
+
+        <script>
+            function changeButtonText(data) {
+                var button = document.getElementById("button_predict");
+                button.innerHTML = data;
+                button.disabled = true;  // Disable the button after it's pressed
+            }
+        </script>
         
     </body>
 </html>
