@@ -9,16 +9,16 @@ function HomePage() {
     return (
         <div>
             <div>
-                <div id = "header" style={{display:'flex'}}>
+                <div id = "header" style={{display:'flex', justifyContent: 'space-between' }}>
                     <div>
-                        <img src={icon}></img>
+                        <img src={icon} id="icon"></img>
                     </div>
                     <div>
-                        <h1 id="custom-h3">
+                        <h3 id="custom-h4">
                             Home
-                        </h1>
+                        </h3>
                     </div>
-                    <div style={{marginLeft:'auto'}}>
+                    <div >
                         <Link to="/log-in">
                             <img src={profile} id="profileicon"></img>
                         </Link>
@@ -29,20 +29,22 @@ function HomePage() {
                 <Line />
                 <Line />
             </div>
-            <div style={{marginLeft: '155px', marginTop: '150px'}}>
-                <div id="main">
-                    <h2 id="custom-h1">
-                        Extra! Extra! 
-                        Read All About It!
-                    </h2>
-                    <h1 id="custom-h1">
-                        Art Gallery
-                    </h1>
-                </div>
-                <div id="signup-button">
-                    <div style={{marginLeft:'auto'}}>
-                        <Link to="/sign-up">
-                            <button id="loginButton">Sign Up</button>
+            <div style={{marginLeft: '200px', marginTop: '70px'}}>
+                <div style={{display:'flex', flexDirection: 'row'}}>
+                    <div >
+                        <Link to="news-page" className="link-style" >
+                            <h2 id="custom-h6">
+                                <p style={{textDecoration:'none'}}> Extra! Extra! </p>
+                                <p style={{textDecoration:'none'}}> Read All </p>
+                                <p style={{textDecoration:'none'}}> About It! </p>
+                            </h2>
+                        </Link>
+                    </div>
+                    <div style={{ marginLeft: 'auto', paddingRight: '200px', paddingTop: "250px"}}>
+                        <Link to="art-page" className="link-style">
+                            <h1 id="custom-h5">
+                                Art Gallery
+                            </h1>
                         </Link>
                     </div>
                 </div>

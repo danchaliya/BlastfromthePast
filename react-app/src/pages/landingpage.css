@@ -3,6 +3,11 @@
     src: url('../assets/DMSerifDisplay-Regular.ttf'),format('ttf');
   }
 
+@font-face {
+font-family: 'Newsreader Regular';
+src: url('../assets/Newsreader_24pt-Regular.ttf'),format('ttf');
+}
+
 #custom-h1{
     font-family: Myriad Pro Regular;
     font-size: 90px;
@@ -24,9 +29,24 @@
 
 #custom-h4{
     font-family: Myriad Pro Regular;
-    font-size: 15px;
+    font-size: 25px;
     
 }
+
+#custom-h5{
+    font-family: Myriad Pro Regular;
+    font-size: 100px;
+    color: #39312B;
+    text-decoration:none;
+}
+
+#custom-h6{
+    font-family: Newsreader Regular;
+    font-size: 80px;
+    color: #39312B;
+    text-decoration:none;
+}
+
 
 #main{
     margin-left: 30px;
@@ -87,6 +107,7 @@
     margin: 20px;
 }
 
+
 #lines-2{
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
@@ -125,3 +146,17 @@
 #profileicon{
     margin-right: 150px;
 }
+
+#icon{
+    margin-left: 150px;
+}
+
+.link-style {
+    text-decoration: none; /* Set no underline by default */
+  }
+  
+  .link-style:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #39312B;
+    
+  }

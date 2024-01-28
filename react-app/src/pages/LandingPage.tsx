@@ -10,7 +10,7 @@ function LandingPage() {
             <div>
                 <div id = "header" style={{display:'flex'}}>
                     <div>
-                        <img src={icon} id="logo"></img>
+                        <img src={icon}></img>
                         </div>
                     <div style={{marginLeft:'auto'}}>
                         <Link to="/log-in">
