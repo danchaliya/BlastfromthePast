@@ -8,16 +8,15 @@ const TextBox = ({customLabel = 'Enter Text:', initialValue = ''}) => {
   };
 
   return (
-    <div id="textbox">
+    <div id="textbox2">
       <input
-        type="text"
+        type="password"
         id="myTextBox"
         value={inputValue}
         onChange={handleChange}
         placeholder={customLabel}
         className="custom-input" 
       />
-      <p></p>
     </div>
   );
 };

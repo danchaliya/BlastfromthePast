@@ -74,13 +74,33 @@
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     margin: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
     
 }
 
-#subpage-title{
+#box{
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    margin: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+
+#myTextBox{
+    font-family: Myriad Pro Regular;
+    
+}
+
+#textbox{
+    margin-bottom: 20px;
+}
+
+#textbox2{
+    margin-bottom: 40px;
+}
+
+.custom-input {
+    color: #39312B ; /* Change text color */
+    background-color: white; /* Change background color */
+    border: 3px solid #39312B; /* Add an outline */
+    padding: 8px; /* Add padding for better aesthetics */
+    border-radius: 4px; /* Optional: Add rounded corners */
+  }
