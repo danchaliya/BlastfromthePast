@@ -3,10 +3,18 @@
     src: url('../assets/DMSerifDisplay-Regular.ttf'),format('ttf');
   }
 
-.custom_h1{
+#custom-h1{
     font-family: Myriad Pro Regular;
-    font-size: 15px;
+    font-size: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+#custom-h2{
+    font-family: Myriad Pro Regular;
+    font-size: 20px;
+}
+
 
 #loginButton{
     background-Color:white;
